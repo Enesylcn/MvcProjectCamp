@@ -1,0 +1,75 @@
+﻿@model EntityLayer.Concrete.Category
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Info boxes -->
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6">
+                    <div class="info-box">
+
+                        <div class="info-box-content">
+                            <p>
+                                Toplam Kategori Sayısı: @ViewBag.Value
+                            </p>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!-- /.col -->
+                <div class="col-12 col-sm-6 col-md-6">
+                    <div class="info-box mb-3">
+                      <div class="info-box-content">
+                            <p>
+                                Yazılım Kategorisine ait Toplam Başlık Sayısı: @ViewBag.Valu
+                            </p>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6">
+                    <div class="info-box mb-3">
+                        <div class="info-box-content">
+                          <p>
+                              Yazar Adında "a" harfi Geçen Yazar sayısı: @ViewBag.Val
+                          </p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+        </div>
+    </section>
+
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+
+    <!-- OPTIONAL SCRIPTS -->
+    <script src="dist/js/demo.js"></script>
+
+    <!-- PAGE PLUGINS -->
+    <!-- jQuery Mapael -->
+    <script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="plugins/raphael/raphael.min.js"></script>
+    <script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
+    <script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+
+    <!-- PAGE SCRIPTS -->
+    <script src="dist/js/pages/dashboard2.js"></script>
+</body>
+</html>
